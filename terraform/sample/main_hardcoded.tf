@@ -10,7 +10,7 @@ resource "digitalocean_ssh_key" "default" {
 resource "digitalocean_droplet" "app" {
   name   = "${local.name_prefix}-droplet"
   region = "nyc3"
-  size   = "s-16vcpu-64gb"
+  size   = "s-2vcpu-8gb-160gb-intel"
   image  = "ubuntu-22-04-x64"
 
   ssh_keys = [digitalocean_ssh_key.default.fingerprint]

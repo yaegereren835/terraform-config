@@ -25,7 +25,7 @@ variable "project_name" {
 variable "postgres_size" {
   description = "Postgres node size"
   type        = string
-  default     = "db-s-1vcpu-1gb"
+  default     = "db-s-4vcpu-32gb"
 }
 
 variable "postgres_version" {
@@ -55,7 +55,7 @@ variable "create_redis" {
 variable "redis_size" {
   description = "Redis node size"
   type        = string
-  default     = "db-s-1vcpu-1gb"
+  default     = "db-s-4vcpu-32gb"
 }
 
 variable "redis_version" {

@@ -30,7 +30,7 @@ variable "ssh_public_key" {
 variable "droplet_size" {
   description = "Droplet size slug"
   type        = string
-  default     = "s-1vcpu-1gb"
+  default     = "s-8vcpu-32gb"
 }
 
 variable "droplet_image" {
@@ -42,7 +42,7 @@ variable "droplet_image" {
 variable "postgres_size" {
   description = "Postgres node size slug"
   type        = string
-  default     = "db-s-1vcpu-1gb"
+  default     = "db-s-4vcpu-32gb"
 }
 
 variable "postgres_version" {
